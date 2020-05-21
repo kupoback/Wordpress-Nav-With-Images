@@ -1,0 +1,41 @@
+//  map
+// ======================================
+.dbdb-megamenu-options {
+	padding:  15px 0;
+	clear:    both;
+	overflow: auto;
+}
+
+.menu-item {
+	.all-levels,
+	.first-level,
+	.sub-level { display: block; }
+	&.menu-item-depth-0 {
+		.sub-level { display: none; }
+	}
+	&:not(.menu-item-depth-0) {
+		.first-level { display: none; }
+	}
+}
+
+.menu-item-settings:after {
+	content: "";
+	display: block;
+	clear:   both;
+}
+
+.nav-menus-php .item-edit:before {
+	margin-bottom: 100vh;
+}
+
+.field-submenu-image {
+	.image,
+	.buttons {
+		&:not(.hidden) {
+			display:       block;
+			margin-top:    10px;
+			margin-bottom: 10px;
+			width:         100%;
+		}
+	}
+}
